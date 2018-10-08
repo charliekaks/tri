@@ -281,7 +281,7 @@ h1, h2, h3, h4, h5, h6 {
 @media (min-width: 768px) and (max-width: 1024px) {
   .typewrite{
     font-family: "Montserrat", sans-serif;
-    font-size: 95px;
+    font-size: 45px;
     line-height: 126px;
     color: #ce3635;
     padding-top: 40px;
@@ -296,7 +296,7 @@ h1, h2, h3, h4, h5, h6 {
 @media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
   .typewrite{
     font-family: "Montserrat", sans-serif;
-    font-size: 75px;
+    font-size: 35px;
     line-height: 126px;
     color: #ce3635;
     padding-top: 40px;
@@ -311,7 +311,7 @@ h1, h2, h3, h4, h5, h6 {
 @media (min-width: 481px) and (max-width: 767px) {
   .typewrite{
     font-family: "Montserrat", sans-serif;
-    font-size: 55px;
+    font-size: 25px;
     line-height: 26px;
     color: #ce3635;
     padding-top: 40px;
@@ -325,13 +325,6 @@ h1, h2, h3, h4, h5, h6 {
     line-height: 126px;
     color: #ce3635;
     padding-top: 40px;
-  }
-}
-@media (max-width: 768px) {
-  .typewrite{
-    font-size: 128px;
-    line-height: 36px;
-    padding-top:120px;
   }
 }
 
