@@ -262,6 +262,71 @@ h1, h2, h3, h4, h5, h6 {
   color: #ce3635;
   padding-top: 40px;
 }
+
+@media (min-width: 1025px) and (max-width: 1280px) {
+  .typewrite{
+    font-family: "Montserrat", sans-serif;
+    font-size: 125px;
+    line-height: 126px;
+    color: #ce3635;
+    padding-top: 40px;
+  }
+}
+
+/* 
+  ##Device = Tablets, Ipads (portrait)
+  ##Screen = B/w 768px to 1024px
+*/
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .typewrite{
+    font-family: "Montserrat", sans-serif;
+    font-size: 95px;
+    line-height: 126px;
+    color: #ce3635;
+    padding-top: 40px;
+  }
+}
+
+/* 
+  ##Device = Tablets, Ipads (landscape)
+  ##Screen = B/w 768px to 1024px
+*/
+
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+  .typewrite{
+    font-family: "Montserrat", sans-serif;
+    font-size: 75px;
+    line-height: 126px;
+    color: #ce3635;
+    padding-top: 40px;
+  }
+}
+
+/* 
+  ##Device = Low Resolution Tablets, Mobiles (Landscape)
+  ##Screen = B/w 481px to 767px
+*/
+
+@media (min-width: 481px) and (max-width: 767px) {
+  .typewrite{
+    font-family: "Montserrat", sans-serif;
+    font-size: 55px;
+    line-height: 26px;
+    color: #ce3635;
+    padding-top: 40px;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+  .typewrite{
+    font-family: "Montserrat", sans-serif;
+    font-size: 15px;
+    line-height: 126px;
+    color: #ce3635;
+    padding-top: 40px;
+  }
+}
 @media (max-width: 768px) {
   .typewrite{
     font-size: 128px;
