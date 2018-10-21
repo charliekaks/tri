@@ -127,8 +127,14 @@ jQuery(document).ready(function($) {
   });
 
   // custom code
-  
-
+  $('#promoIMG').splashScreen({
+		textLayers : [
+			'img/Inspire.png',
+			'img/Evolve.png',
+			'img/Exell.png',
+			'img/Future.png'
+		]
+	});
 });
 var TxtType = function(el, toRotate, period) {
   this.toRotate = toRotate;
@@ -171,8 +177,10 @@ TxtType.prototype.tick = function() {
   }, delta);
 };
 
+
 window.onload = function() {
-  var elements = document.getElementsByClassName('typewrite');
+  setTimeout(function () {
+    var elements = document.getElementsByClassName('typewrite');
   for (var i=0; i<elements.length; i++) {
       var toRotate = elements[i].getAttribute('data-type');
       var period = elements[i].getAttribute('data-period');
@@ -185,4 +193,12 @@ window.onload = function() {
   css.type = "text/css";
   css.innerHTML = ".typewrite > .wrap { border-right: 0.1em solid #fff}";
   document.body.appendChild(css);
+}, 14000);
+$('#delayed').delay(14000).fadeIn(400);
 }
+
+
+
+$(".menu").click(function(){
+  $(this).parent().toggleClass("close");
+});
