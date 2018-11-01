@@ -156,7 +156,7 @@ TxtType.prototype.tick = function() {
   this.txt = fullTxt.substring(0, this.txt.length + 1);
   }
 
-  this.el.innerHTML = '<span class="wrap">'+this.txt+'</span>';
+  this.el.innerHTML = '<span class="wrap_2">'+this.txt+'</span>';
 
   var that = this;
   var delta = 200 - Math.random() * 100;
@@ -191,14 +191,27 @@ window.onload = function() {
   // INJECT CSS
   var css = document.createElement("style");
   css.type = "text/css";
-  css.innerHTML = ".typewrite > .wrap { border-right: 0.1em solid #fff}";
+  css.innerHTML = ".typewrite > .wrap_2 { border-right: 0.1em solid #fff}";
   document.body.appendChild(css);
 }, 14000);
 $('#delayed').delay(14000).fadeIn(400);
 }
-
+setTimeout(() => {
+  var element = document.getElementById("myscrll");
+  element.classList.remove("splash");
+}, 14000);
 
 
 $(".menu").click(function(){
   $(this).parent().toggleClass("close");
+});
+
+$(".button a").click(function(){
+  $(".overlay").fadeToggle(200);
+ $(this).toggleClass('btn-open').toggleClass('btn-close');
+});
+$('.overlay').on('click', function(){
+  $(".overlay").fadeToggle(200);   
+  $(".button a").toggleClass('btn-open').toggleClass('btn-close');
+  open = false;
 });

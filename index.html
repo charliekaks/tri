@@ -29,34 +29,88 @@
 
   <!-- Main Stylesheet File -->
   <link href="css/style.css" rel="stylesheet">
-  <link rel="stylesheet/scss" type="text/css" href="css/styles.scss">
+  
 
 </head>
 
-<body>
+<body class="splash" id="myscrll">
 
   <!--==========================
     Header
   ============================-->
-  
   <header id="header">
-    <div class="container-fluid">
-        <div id="page">
-            <div id="promoIMG"></div>
-          </div>
+    <div  class="container-fluid">
+          <div id="page">
+              <div id="promoIMG"></div>
+            </div>
     </div>
     <div id="delayed">
-        <label class="ham">
-            <input type='checkbox'>
-            <span class='menu'> <span class='hamburger'></span> </span>
+        <nav>
             <ul>
-              <li class="clck"> <a href='#intro'>Home</a> </li>
-              <li class="clck"><a href="#about">About Us</a></li>
-              <li class="clck"><a href="#features">Features</a></li>
-              <li class="clck"><a href="#team">Team</a></li>
-              <li class="clck"><a href="#contact">Contact Us</a></li>
+                <li><a href="#"></a></li>
             </ul>
-            </label>
+            <div class="button">
+                <a class="btn-open" href="#"></a>
+            </div>
+        </nav>
+            <div class="overlay">
+                <div class="wrap">
+                    <ul class="wrap-nav">
+                        <li><a href="#about">About</a>
+                        <ul>
+                            <li><a href="#about">About Company</a></li>
+                            <li><a href="#about">Mission</a></li>
+                            <li><a href="#about">Vision</a></li>
+                            <li><a href="#about">Culture</a></li>
+                        </ul>
+                        </li>
+                        <li><a href="#features">Features</a>
+                        <ul>
+                            <li><a href="#features">Services</a></li>
+                            <li><a href="#features">Products</a></li>
+                        </ul>
+                        </li>
+                        <li><a href="#team">Our Team</a>
+                        <ul>
+                            <li><a href="#team">Mangerial Roles</a></li>
+                            <li><a href="#team">Technical Roles</a></li>
+                        </ul>
+                        </li>
+                        <li><a href="#blog">Blog and News</a>
+                            <ul>
+                                <li><a href="#blog">Blog</a></li>
+                                <li><a href="#blog">News</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#contact">Contact Us</a>
+                        </li>
+                        <li><a href="#intro">Home</a>
+                        </li>
+                    </ul>
+                    <div class="social">
+                        <a target="_blank" href="https://www.facebook.com/Trilcen-Technologies-Ltd">
+                        <div class="social-icon">
+                            <i class="fa fa-facebook"></i>
+                        </div>
+                        </a>
+                        <a target="_blank" href="https://twitter.com/TrilcenT">
+                        <div class="social-icon">
+                            <i class="fa fa-twitter"></i>
+                        </div>
+                        </a>
+                        <a target="_blank" href="https://www.linkedin.com/company/trilcen-technologies/">
+                        <div class="social-icon">
+                            <i class="fa fa-linkedin"></i>
+                        </div>
+                        </a>
+                        <a target="_blank" href="https://www.instagram.com/trilcentech">
+                        <div class="social-icon">
+                            <i class="fa fa-instagram"></i>
+                        </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
       <div class="container">
         <div id="logo" class="pull-left">
           <a href="#intro"><img src="img/logo_comp.png" alt="" title=""></a>
@@ -70,16 +124,19 @@
   ============================-->
   <section id="intro" class="v-header container">
       <div class="fullscreen-video-wrap">
-          <video class="video-content"autoplay loop id="video-background" muted plays-inline>
-              <source src="img/stock.mp4" type="video/mp4">
-              <source src="img/stock.webm" type="video/webm">
+          
+
+          <video class="video-content" autoplay loop id="video-background" muted plays-inline poster="img/poster.png" preload="auto" width="100%" height="100%">
+              <source src="img/stock.mp4" type="video/mp4">  
+              <source src="img/stock.webm" type="video/webm">  
+              <source src="img/stock.ogv" type="video/ogg">
             </video>
       </div>
       
       <!-- <div class="header-overlay"></div> -->
       <div class="header-content">
         <h3 href="" class="typewrite" data-period="2000" data-type='["enriching you and your lifestyle"]'>
-          <span class="wrap"></span>
+          <span class="wrap_2"></span>
         </h3>
         
       </div>
@@ -97,20 +154,20 @@
           <span class="section-divider"></span>
           <p class="section-description">
           <span class="vision">Our Vision</span><br>
-          Inspiring with youth originality and productivity to build a caring, moving and positive world.
+          A caring, moving and positive world.
           </p>
         </div>
 
         <div class="row">
           <div class="col-lg-6 about-img wow fadeInLeft">
-            <img src="img/about-img.jpg" alt="">
+            <img src="img/about-img.png" alt="">
           </div>
 
-          <div class="col-lg-6 content wow fadeInRight">
+          <div class="col-lg-6 content wow fadeInRight level">
             <h2 class="vision">Mission</h2>
-            <p>loyal to enriching you and your world in solving socio-economic issues while inspiring youth originality and productivity.</p>
+            <p>Closing gaps with originality and productivity.</p>
             <h2 class="vision">Culture</h2>
-            <p>TRILCEN TECHNOLOGIES LTD is formed to uphold a culture that aspires to inspire one to inspire another and others to strive and thrive in building a caring, moving and positive world by empowering youth originality; promoting sustainable development; and closing socio-economic gaps: challenges, changes and inefficiencies.</p>
+            <p>TRILCEN TECHNOLOGIES LTD upholds a culture that aspires to inspire one to inspire another and others to strive and thrive in building a caring, moving and positive world.</p>
 
           </div>
         </div>
@@ -129,12 +186,10 @@
         </div>
         <div class="row">
           <div class="col-md-6">
-            <div class="icon"><i class="ion-ios-speedometer-outline"></i></div>
             <h4 class="title"><a href="">Our Services - B2B</a></h4>
-            <p class="description">We are targeting corparates and innovators un that we help them create, optimize or deliver innovation with a world class touch of technology</p>
+            <p class="description">We are targeting corparates and innovators in that we help them create, optimize or deliver innovation with a world class touch of technology</p>
           </div>
           <div class="col-md-6">
-            <div class="icon"><i class="ion-ios-flask-outline"></i></div>
                 <h4 class="title"><a href="">Our Products - C2C</a></h4>
                 <p class="description">We focus on delivery moving, novel and scalable technological products to enrich you and your lifestyle</p>
           </div>
@@ -164,12 +219,6 @@
               <div class="pic"><img src="img/team/ceo.jpg" alt=""></div>
               <h4>Bernick Bilo</h4>
               <span>Chief Executive Officer</span>
-              <div class="social">
-                <a href=""><i class="fa fa-twitter"></i></a>
-                <a href=""><i class="fa fa-facebook"></i></a>
-                <a href=""><i class="fa fa-google-plus"></i></a>
-                <a href=""><i class="fa fa-linkedin"></i></a>
-              </div>
             </div>
           </div>
 
@@ -178,12 +227,14 @@
               <div class="pic"><img src="img/team/coo.jpg" alt=""></div>
               <h4>Allan Aoko</h4>
               <span>Chief Operating Officer</span>
-              <div class="social">
-                <a href=""><i class="fa fa-twitter"></i></a>
-                <a href=""><i class="fa fa-facebook"></i></a>
-                <a href=""><i class="fa fa-google-plus"></i></a>
-                <a href=""><i class="fa fa-linkedin"></i></a>
-              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6">
+            <div class="member">
+              <div class="pic"><img src="img/team/animator.jpg" alt=""></div>
+              <h4>Fridah Wangoi</h4>
+              <span>Lead Animator</span>
             </div>
           </div>
 
@@ -348,7 +399,7 @@
           </div>
 
           <div class="col-lg-5 col-md-8">
-            <form role="form" id="contactForm" data-toggle="validator" class="shake"  method="post" action="contact/conact.php">
+            <form role="form" id="contactForm" data-toggle="validator" class="shake"  method="post" action="https://formspree.io/info@trilcentech.com">
               <div class="row">
                   <div class="form-group col-sm-6">
                       <label for="name" class="h4">Name</label>

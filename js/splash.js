@@ -2,7 +2,7 @@
 // standard technique for developing jQuery plugins.
 
 (function($){
-	
+		
 	$.fn.splashScreen = function(settings){
 		
 		// Providing default options:
@@ -18,16 +18,18 @@
 		// Creating the splashScreen div.
 		// The rest of the styling is in splashscreen.css
 		
-		var splashScreen = $('<div>',{
+		var splashScreen = 
+		
+		$('<div>',{
 			id	: 'splashScreen',
 			css:{
 				backgroundImage		: promoIMG.css('backgroundImage'),
-				backgroundPosition	: 'center '+promoIMG.offset().top+'px',
+				backgroundPosition	: 'center'+promoIMG.offset().top+'px',
                 height				: $(document).height(),
-                backgroundSize      : '1200px'
+                backgroundSize      : 'contain'
 			}
 		});
-		
+	
 		$('body').append(splashScreen);
 		
 		splashScreen.click(function(){
